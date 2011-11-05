@@ -44,11 +44,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BaseFileMissingException.cs" />
+    <Compile Include="InvalidMpqFormatException.cs" />
     <Compile Include="MpqArchive.cs" />
     <Compile Include="MpqFileEntry.cs" />
     <Compile Include="MpqFileStream.cs" />
+    <Compile Include="MpqLoadOptions.cs" />
     <Compile Include="MpqReadOnlyFileStream.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SignatureVerification.cs" />
+    <Compile Include="Unsafe\Interop\TFileStream.cs" />
+    <Compile Include="Unsafe\Interop\TMpqArchive.cs" />
+    <Compile Include="Unsafe\Interop\TMpqHetTable.cs" />
+    <Compile Include="Unsafe\TMpqBlock.cs" />
+    <Compile Include="Unsafe\TMpqHash.cs" />
+    <Compile Include="Unsafe\TMpqHeader.cs" />
+    <Compile Include="Unsafe\TMpqUserData.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

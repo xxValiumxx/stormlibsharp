@@ -36,4 +36,21 @@ namespace StormLibSharp.Unsafe.Interop
         internal uint dwAttrFlags;
         internal uint dwFlags;
     }
+
+    internal unsafe struct TFileEntry
+    {
+        internal ulong ByteOffset;
+        internal ulong FileTime;
+        internal ulong BetHash;
+        internal uint dwHashIndex;
+        internal uint dwHetIndex;
+        internal uint dwFileSize;
+        internal uint dwCmpSize;
+        internal uint dWFlags;
+        internal ushort lcLocale;
+        internal ushort wPlatform;
+        internal uint dwCrc32;
+        internal fixed byte md5[16];
+        internal byte* szFileName;
+    }
 }

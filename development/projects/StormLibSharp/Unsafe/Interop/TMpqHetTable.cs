@@ -5,7 +5,16 @@ using System.Text;
 
 namespace StormLibSharp.Unsafe.Interop
 {
-    class TMpqHetTable
+    internal unsafe struct TMpqHetTable
     {
+        internal byte* pBetIndexes;
+        internal byte* pHetHashes;
+        internal ulong AndMask64;
+        internal ulong OrMask64;
+        internal uint dwIndexSizeTotal;
+        internal uint dwIndexSizeExtra;
+        internal uint dwMaxFileCount;
+        internal uint dwHashTableSize;
+        internal uint dwHashBitSize;
     }
 }

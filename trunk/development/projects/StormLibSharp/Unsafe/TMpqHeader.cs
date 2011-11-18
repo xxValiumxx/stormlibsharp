@@ -7,7 +7,7 @@ using System.Runtime.InteropServices;
 namespace StormLibSharp.Unsafe
 {
     [StructLayout(LayoutKind.Sequential, Pack = 1)]
-    internal struct TMpqHeader
+    internal unsafe struct TMpqHeader
     {
         // v1
         internal uint dwID;
